@@ -16,7 +16,7 @@ function LandingScreen({ onFinish }: LoadingScreenProps) {
     });
       tl.to(loaderRef.current, { opacity: 1, duration: 0.5 })
       .to(loaderRef.current, { opacity: 1, duration: 1, repeat: 1, yoyo: true })
-      .to(loaderRef.current, { opacity: 0, duration: 0.5 });
+      .to(loaderRef.current, { opacity: 0, duration: 0.1});
 
     },{  dependencies: [onFinish], scope: loaderRef})
 
