@@ -3,19 +3,13 @@ import Layout from './layouts/Layout'
 import { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
-gsap.registerPlugin(useGSAP);
+import InfintVideo from './components/InfintVideo';
 export default function App() {
   const container = useRef(null);
   return (
     <Layout>
-      <div ref={container} className="flex flex-col   items-center justify-center h-screen" >
-        <div className='bg-red-400 min-h-full flex-1 min-w-full'>
-
-        </div>
-
-      </div>
       
-
+      <InfintVideo src='videos/RPK_Reel_FR_short_V3_compress.mp4'/>
     </Layout>
   )
 }
